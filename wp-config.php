@@ -22,7 +22,7 @@ define('W3TC_EDGE_MODE', true); // Added by W3 Total Cache
 */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+/** The name of the database for WordPress got from mysql */
 //Added by WP-Cache Manager
 define('DB_NAME', 'eh');
 
