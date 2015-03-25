@@ -179,7 +179,7 @@
 
 var cat_filter = Array();
 if (window.location.href.indexOf("?") > 15) {
-  window.location.href = "https://essentialhotels.co.uk/index.php?" + window.location.href.split("?").pop();
+  window.location.href = "/index.php?" + window.location.href.split("?").pop();
 }
 //
 //globles
