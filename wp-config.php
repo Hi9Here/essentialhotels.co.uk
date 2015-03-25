@@ -30,7 +30,7 @@ define('DB_NAME', 'eh');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '0YmuAqdzDr');
+define('DB_PASSWORD', 'Zaq!2wsx');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');
