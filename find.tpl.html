@@ -1,0 +1,35 @@
+<!--Grid of Content-->
+<section ng-cloak class="container-fluid block-center">
+  <div class="row full-height">
+    <div ng-show="mapShow = ((facilities.length>1) && (listedPoints.length>0))" class="hidden-xs hidden-sm center-block col-md-5">
+      <div class="map">
+        <div class="doubleclick">Double Click to Use Zoom</div>
+        <map id="themap" center="{{midPoint(listedPoints)}}" max-zoom="15" on-bounds_changed="show(event, id)" on-zoom_changed="zoomChanged()" on-idle="idle()" on-click="map_click()" style="display: block; height: 100%;">
+          <marker ng-repeat="(id, point) in listedPoints=(listedItems|filter:{LatLng:','})" on-click="show(event, id)" position="{{point.LatLng}}" title="{{point.value}}"></marker>
+        </map>
+      </div>
+    </div>
+    <div ng-class="{'col-md-7':mapShow,'col-md-12':!mapShow}" class="results" ng-click="mapFilter = false" infinite-scroll='loadMore()' infinite-scroll-distance='1' style="margin-top: 50px;height:100%; overflow: scroll;">
+      <h3>{{find.params.place}} {{find.params.type}}</h3>
+      <div ng-show="facilities.length" class="row-fluid by-facility">
+        <div class="col-centered center-block">
+          <ul class="nav nav-pills">
+            <li ng-repeat="f in facilities" ng-class="{disabled:badge==0, active:facilitiesFilterIndexOf(f)}" class="flex">
+              <a ng-click="(badge == 0) ? null : facilitiesFilterTog($index)" class='index-{{$index}} badge-{{badge = ((listedItems | filter:{ facilities: f}).length) }}'> {{f}} <span class="badge">{{badge}}</span> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div ng-cloak class="col-centered center-block">
+        <ul class="grid centered center">
+          <li ng-repeat="item in listedItems = (items|filter:{cat:find.params.place, type:find.params.type, image:'.'}|filter:filterFn)" class='col-sm-3 col-md-4 {{item.type}}' ng-show="(mapFilter === true)?area_contains_str_latlng(item.LatLng):1">
+            <a ng-href="{{item.url}}">
+              <img ng-src="https://sdyrcs.cloudimage.io/s/crop/200x200/{{item.image}}" />
+              <h3 class="title">{{decodeURI(item.value)}}</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
