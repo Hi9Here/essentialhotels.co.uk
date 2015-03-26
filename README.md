@@ -3,5 +3,5 @@
 If you need to push to dev server then use the dev branch
 
 
-If you need to push to the live server then use the live branch
+If you need to push to the live server then use the live branch. Only a few files are needed
 
