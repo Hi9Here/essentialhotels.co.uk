@@ -1,6 +1,6 @@
-<?php
+<!--<?php
 get_header();
-?>
+?>-->
 <?php
 if (have_posts()):
   $count = 0;
