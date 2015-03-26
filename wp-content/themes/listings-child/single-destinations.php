@@ -112,7 +112,7 @@ if (have_posts()):
 
 <div id="telnumber">
 	<a href="tel:01189714700">
-	T: 0118 971 4700
+	Tel: 0118 971 4700
 	</a>
 </div>
 
