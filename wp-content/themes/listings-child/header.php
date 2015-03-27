@@ -12,8 +12,8 @@
     <link rel="import" href="/bower_components/paper-form-on-fire/paper-form-on-fire.html">
 
 	<!-- Polymer Menu Imports-->
-  	<script src="elements/search.js"></script>
-  	<link rel="import" href="elements/elements.html">
+  	<script src="/elements/search.js"></script>
+  	<link rel="import" href="/elements/elements.html">
   	<link rel="stylesheet" href="app.css">
 
 	<!-- jQuery UI Datepicker - Animations   -->
