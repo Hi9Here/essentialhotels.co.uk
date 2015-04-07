@@ -59,23 +59,6 @@
 
 	<core-drawer-panel id="drawerPanel" responsiveWidth="1000px">
 
-	  <core-header-panel drawer>
-	    <core-toolbar icon="menu">Menu</core-toolbar>
-	    <core-menu selected="0">
-	      <core-item icon="home" label="Home"><a href="https://essentialhotels.co.uk"></a></core-item>
-	      <core-item icon="maps:hotel" label="All destinations"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/World/"></a></core-item>
-	      <core-item icon="maps:hotel" label="London"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/London/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Manchester"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/Manchester/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Paris"><a href="https://essentialhotels.co.uk/f.html#/hotels/Paris/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Brighton"><a href="https://essentialhotels.co.uk/f.html#/hotels/Brighton/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Rome"><a href="https://essentialhotels.co.uk/f.html#/hotels/Rome/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Madrid"><a href="https://essentialhotels.co.uk/f.html#/hotels/Madrid/"></a></core-item>
-	      <core-item icon="maps:hotel" label="New York"><a href="https://essentialhotels.co.uk/f.html#/hotels/New%20York/"></a></core-item>
-	      <core-item icon="maps:hotel" label="Dubai"><a href="https://essentialhotels.co.uk/f.html#/hotels/Dubai/"></a></core-item>
-	    </core-menu>
-	  </core-header-panel>
-
-	  <core-header-panel main>
 	    <core-toolbar>
 	      <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button>
 	      <div><img src="elements/EH-Logo.png" alt="Essential Hotels" style="width: 76px;"></div>
@@ -99,7 +82,6 @@
           <!-- <paper-icon-button icon="search"></paper-icon-button> -->
 		  <div>Enquiry</div>
 	    </core-toolbar>
-	  </core-header-panel>
 
 	</core-drawer-panel>
 
