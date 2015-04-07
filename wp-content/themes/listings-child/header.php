@@ -6,7 +6,7 @@
 <?php global $woo_options; ?>
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+	<link rel="alternate" type="application/rssxml" title="RSS 2.0" href="/feed" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="import" href="/bower_components/paper-form-on-fire/paper-form-on-fire.html">
@@ -55,30 +55,59 @@
 </div>
 	
 <div id="navig">
-		<?php
-		if ( function_exists('has_nav_menu') && has_nav_menu('primary-menu') ) {
-			wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'main-nav', 'menu_class' => 'nav fl', 'theme_location' => 'primary-menu' ) );
-		} else {
-		?>
-        <ul id="main-nav" class="nav fl">
-			<?php 
-        	if ( isset($woo_options['woo_custom_nav_menu']) AND $woo_options['woo_custom_nav_menu'] == 'true' ) {
-        		if ( function_exists('woo_custom_navigation_output') )
-					woo_custom_navigation_output();
+<body unresolved fullbleed layout vertical>
 
-			} else { ?>
-            	
-	            <?php if ( is_page() ) $highlight = "page_item"; else $highlight = "page_item current_page_item"; ?>
-	            <li class="<?php echo $highlight; ?>"><a href="/"><?php _e('Home', 'woothemes') ?></a></li>
-	            <?php 
-	    			wp_list_pages('sort_column=menu_order&depth=6&title_li=&exclude='.get_option('woo_listings_cpt_page')); 
+	<core-drawer-panel id="drawerPanel" responsiveWidth="1000px">
 
-			}
-			?>
-        </ul><!-- /#nav -->
-        <?php } ?>
-        
-	</div><!-- /#navigation -->
+	  <core-header-panel drawer>
+	    <core-toolbar icon="menu">Menu</core-toolbar>
+	    <core-menu selected="0">
+	      <core-item icon="home" label="Home"><a href="https://essentialhotels.co.uk"></a></core-item>
+	      <core-item icon="maps:hotel" label="All destinations"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/World/"></a></core-item>
+	      <core-item icon="maps:hotel" label="London"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/London/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Manchester"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/Manchester/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Paris"><a href="https://essentialhotels.co.uk/f.html#/hotels/Paris/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Brighton"><a href="https://essentialhotels.co.uk/f.html#/hotels/Brighton/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Rome"><a href="https://essentialhotels.co.uk/f.html#/hotels/Rome/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Madrid"><a href="https://essentialhotels.co.uk/f.html#/hotels/Madrid/"></a></core-item>
+	      <core-item icon="maps:hotel" label="New York"><a href="https://essentialhotels.co.uk/f.html#/hotels/New%20York/"></a></core-item>
+	      <core-item icon="maps:hotel" label="Dubai"><a href="https://essentialhotels.co.uk/f.html#/hotels/Dubai/"></a></core-item>
+	    </core-menu>
+	  </core-header-panel>
+
+	  <core-header-panel main>
+	    <core-toolbar>
+	      <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button>
+	      <div><img src="elements/EH-Logo.png" alt="Essential Hotels" style="width: 76px;"></div>
+	      <span flex></span>
+		    <div style="width: 40%;">
+		      <script>
+				  (function() {
+				    var cx = '012477433197051517293:sl1ssjlfhme';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') 
+				        '//www.google.com/cse/cse.js?cx='  cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+          <paper-icon-button icon="communication:call"><a href="tel:44-0800-180-4700"></a></paper-icon-button>
+          <!-- <paper-icon-button icon="search"></paper-icon-button> -->
+		  <div>Enquiry</div>
+	    </core-toolbar>
+	  </core-header-panel>
+
+	</core-drawer-panel>
+
+
+</body>
+
+
+</div><!-- /#navigation -->
 
 	</div><!-- /#header -->
 
