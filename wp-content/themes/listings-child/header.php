@@ -61,7 +61,7 @@
 
 	    <core-toolbar>
 	      <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button>
-	      <div><img src="elements/EH-Logo.png" alt="Essential Hotels" style="width: 76px;"></div>
+	      <div><img src="/elements/EH-Logo.png" alt="Essential Hotels" style="width: 76px;"></div>
 	      <span flex></span>
 		    <div style="width: 40%;">
 		      <script>
