@@ -26,10 +26,25 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^essentialhotels.co.uk$ [NC]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 </IfModule>
 
 directoryindex index.html index.php
+<IfModule pagespeed_module>
+  ModPagespeed on
+ModPagespeedMapOriginDomain "http://localhost" "https://essentialhotels.co.uk"
+ModPagespeedEnableFilters extend_cache
+ModPagespeedEnableFilters combine_css
+ModPagespeedEnableFilters combine_javascript
+ModPagespeedEnableFilters collapse_whitespace
+#ModPagespeedEnableFilters move_css_to_head #not compat polymer
+ModPagespeedEnableFilters canonicalize_javascript_libraries
+ModPagespeedEnableFilters collapse_whitespace
+ModPagespeedEnableFilters rewrite_images
+ModPagespeedEnableFilters remove_comments
 
-ModPagespeed on
-#ModPagespeedEnableFilters trim_urls
-#ModPagespeedPreserveUrlRelativity on
+</IfModule>
