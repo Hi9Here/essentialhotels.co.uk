@@ -5,19 +5,23 @@
 <?php woo_meta(); ?>
 <?php global $woo_options; ?>
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <link rel="import" href="/bower_components/paper-form-on-fire/paper-form-on-fire.html">    
-  <!-- jQuery UI Datepicker - Animations   -->
+    <link rel="import" href="/bower_components/paper-form-on-fire/paper-form-on-fire.html">
 
+	<!-- Polymer Menu Imports-->
+  	<script src="/elements/search.js"></script>
+  	<link rel="import" href="/elements/elements.html">
+  	<link rel="stylesheet" href="app.css">
+
+	<!-- jQuery UI Datepicker - Animations   -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"/>
 	<script src="//code.jquery.com/jquery-1.8.2.js"></script>
     <script src="//code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-
     <link rel="stylesheet" href="/resources/demos/style.css" />
-      
+
 <?php wp_head(); ?>
 <?php woo_head(); ?>
 
@@ -39,10 +43,6 @@
 
 </script>
 
-
-
-
-    
 </head>
 
 <body <?php body_class(); ?>>
@@ -79,10 +79,8 @@
         <?php } ?>
         
 	</div><!-- /#navigation -->
-        
-	   
+
 	</div><!-- /#header -->
 
 <div id="container" class="col-full">
-	
-	       
+
