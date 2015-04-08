@@ -91,8 +91,8 @@ if (!isset($_GET['card']) && !isset($_GET['iframe']) && !isset($_GET['mobi'])) {
   echo get_post_meta($post->ID, 'postcode', true);
 ?>
 </div> 
-<div id="teleno">
-  <a href="href="tel:+448001804700">UK Freephone 0800 180 4700</a>
+<div id="teloffer">
+  <a href="tel:+448001804700">UK Freephone 0800 180 4700</a>
 </div>
 
 <div id="hotelsinarea">
