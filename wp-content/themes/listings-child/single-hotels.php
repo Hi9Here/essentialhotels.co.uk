@@ -91,10 +91,8 @@ if (!isset($_GET['card']) && !isset($_GET['iframe']) && !isset($_GET['mobi'])) {
   echo get_post_meta($post->ID, 'postcode', true);
 ?>
 </div> 
-<div id="teloffer">
-  <a href="tel:08001804700">
-  <img src="https://essentialhotels.co.uk/wp-content/uploads/2014/12/Telephone-Number-PNG-USE-3.png" alt="Special Phone Only Deals Call 0118 9714 700">
-  </a>
+<div id="teleno">
+  <a href="href="tel:+448001804700">UK Freephone 0800 180 4700</a>
 </div>
 
 <div id="hotelsinarea">
