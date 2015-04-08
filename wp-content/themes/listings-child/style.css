@@ -2765,9 +2765,11 @@ H3.archive_year
 
 
 #teloffer {
-	position:absolute;
-	right:0px;
-	top:0px;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	font-size: 30px;
+	font-weight: 500;
 }
 
 /*Menu*/
