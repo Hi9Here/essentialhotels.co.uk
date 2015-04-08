@@ -75,7 +75,7 @@
             </core-menu>
           </core-header-panel>
 
-          <core-header-panel main>
+          <core-header-panel main waterfall>
             <core-toolbar>
             <!-- If you want to have the menu back change to the line below and delete the line below that -->
               <!-- <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button> -->
