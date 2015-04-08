@@ -168,7 +168,7 @@ if ($maps_active == 'on')
   ?>		 </div>   </div> <?php
 }
 ?>  </div>  
-<div class="fix"></div>   <div class="fullwidth">  <?php
+<div class="fix"></div>   <div class="fullwidth" style="display:none;">  <?php
 if (function_exists('yoast_breadcrumb'))
 {
   yoast_breadcrumb('<div id="breadcrumb"><p>', '</p></div>');
