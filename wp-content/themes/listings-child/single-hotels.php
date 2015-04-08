@@ -271,7 +271,7 @@ endif;
 endwhile;
 ?> <?php
 endif;
-?>   <?php
+ get_footer();
 } elseif (isset($_GET['mobi'])) {
   // 
   //
