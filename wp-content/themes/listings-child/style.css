@@ -1107,6 +1107,7 @@ DIV.fake-banner
 {
 	position: relative;
 	border-top: 1px solid #999;
+	display:none;
 }
 .similar-listings H2
 {
