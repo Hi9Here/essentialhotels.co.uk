@@ -1384,3 +1384,7 @@ paper-form-on-fire /deep/ a {
 core-toolbar {
     background-color: #212121;
 }
+
+paper-button {
+    color: #FFF;
+}
