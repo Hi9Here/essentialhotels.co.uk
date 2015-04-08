@@ -1,4 +1,3 @@
-<script>
   (function() {
     var cx = '012477433197051517293:sl1ssjlfhme';
     var gcse = document.createElement('script');
@@ -9,4 +8,3 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script>
