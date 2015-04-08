@@ -274,7 +274,6 @@ endwhile;
 ?> <?php
 endif;
 ?>   <?php
-get_footer();
 } elseif (isset($_GET['mobi'])) {
   // 
   //
@@ -418,14 +417,6 @@ get_footer();
   }//endif;
   //get_footer();
 ?>
-        <div id="footer" class="full">
-                <div id="copyright" class="col-left">
-                        <p>© 2014 Essential Hotels 01189714700. All Rights Reserved.</p>
-                </div>
-                <div id="credit" class="col-right">
-        <p>Designed by Morna</p>
-                </div>
-        </div><!-- /#footer  -->
   </body>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
