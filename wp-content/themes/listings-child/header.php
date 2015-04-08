@@ -14,7 +14,7 @@
         <!-- Polymer Menu Imports-->
         <script src="/elements/search.js"></script>
         <link rel="import" href="/elements/elements.html">
-        <link rel="stylesheet" href="../../../assets/main.css">
+        <link rel="stylesheet" href="../../../assets/css/main.css">
 
         <!-- jQuery UI Datepicker - Animations   -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"/>
