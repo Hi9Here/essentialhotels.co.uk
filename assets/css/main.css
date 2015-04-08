@@ -1380,3 +1380,7 @@ paper-form-on-fire /deep/ a {
   color: #FFF;
   text-decoration: none;
   }
+
+core-toolbar {
+    background-color: #212121;
+}
