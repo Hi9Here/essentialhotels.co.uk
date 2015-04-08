@@ -147,18 +147,6 @@ body {
 #menu-button {
     margin: 20px;
 }
-.btn-warning {
-    margin-top: 5px;
-}
-
-.jumbotron {
-    background-image: url('https://essentialhotels.co.uk/wp-content/uploads/2014/08/Lowry-Hotel-Uncut-Version-2.jpg');
-    text-align: center;
-    padding-top: 100px;
-    height: 500px;
-    background-position: 60% 0%;
-    background-size: cover;
-}
 #TitleOverSearch {
     font-size:20px;
     font-weight: 300;
