@@ -14,13 +14,12 @@
         <!-- Polymer Menu Imports-->
         <script src="/elements/search.js"></script>
         <link rel="import" href="/elements/elements.html">
-        <link rel="stylesheet" href="/app.css">
+        <link rel="stylesheet" href="../../../assets/main.css">
 
         <!-- jQuery UI Datepicker - Animations   -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"/>
         <script src="//code.jquery.com/jquery-1.8.2.js"></script>
     <script src="//code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
 
 <?php wp_head(); ?>
 <?php woo_head(); ?>
