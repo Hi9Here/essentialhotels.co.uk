@@ -2118,7 +2118,7 @@ H4
 #stickymenu li a {
     background: #ACACAC;
     color: white;
-    padding:10px 40px 10px 10px;
+    padding:10px 40px 10px 40px;
     opacity:0.9;
     margin-left:5px;
 }
