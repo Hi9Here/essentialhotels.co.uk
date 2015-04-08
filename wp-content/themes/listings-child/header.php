@@ -79,7 +79,7 @@
             <core-toolbar>
             <!-- If you want to have the menu back change to the line below and delete the line below that -->
               <!-- <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button> -->
-              <core-item icon="home"><a href="https://essentialhotels.co.uk"></a></core-item>
+              <core-item icon="home" style="color:#FFF;"><a href="https://essentialhotels.co.uk"></a></core-item>
               <div><img src="/elements/EH-Logo.png" alt="Essential Hotels" style="width: 76px;"></div>
               <span flex></span>
                     <div style="width: 40%;">
