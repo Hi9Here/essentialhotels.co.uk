@@ -62,7 +62,7 @@
           <core-header-panel drawer>
             <core-toolbar icon="menu">Menu</core-toolbar>
             <core-menu selected="0">
-              <core-item icon="home" label="Home"><a href="https://essentialhotels.co.uk"></a></core-item>
+              <core-item icon="home" label="Home" style="color:#FFF;"><a href="https://essentialhotels.co.uk"></a></core-item>
               <core-item icon="maps:hotel" label="All destinations"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/World/"></a></core-item>
               <core-item icon="maps:hotel" label="London"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/London/"></a></core-item>
               <core-item icon="maps:hotel" label="Manchester"><a href="https://www.essentialhotels.co.uk/f.html#/hotels/Manchester/"></a></core-item>
@@ -97,7 +97,7 @@
 </script>
 <gcse:search></gcse:search>
                         </div>
-          <paper-icon-button icon="communication:call"><a href="tel:+44-0800-180-4700"></a></paper-icon-button>
+          <paper-icon-button icon="communication:call" style="color:#FFF;"><a href="tel:+44-0800-180-4700"></a></paper-icon-button>
           <!-- <paper-icon-button icon="search"></paper-icon-button> -->
                   <div>
                         <a>
