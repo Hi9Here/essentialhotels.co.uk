@@ -4,7 +4,7 @@
 <title><?php woo_title(); ?></title>
 <?php woo_meta(); ?>
 <?php global $woo_options; ?>
-<meta name=viewport content="width=device-width, initial-scale=.5">
+<meta name=viewport content="width=device-width, initial-scale=.25">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
